@@ -40,7 +40,7 @@ class Student:
         self.__score = []
         self.__test = []
 
-        with open('DZ12/subjects.csv', 'r', newline='', encoding='utf-8') as cf:
+        with open('subjects.csv', 'r', newline='', encoding='utf-8') as cf:
             for line in cf:
                 self.__subjects[line[:-2]] = {'оценки': [], 'тесты': []}
 
